@@ -3,7 +3,7 @@ use std::io::prelude::*;
 use std::net::{TcpListener, TcpStream};
 use std::str::from_utf8;
 
-use poc_rust_webserver::{input_parsing::input_parsing, ThreadPool};
+use main::{input_parsing::input_parsing, ThreadPool};
 
 const HTTP_RESPONSE_LINK_OK: &str = "HTTP/1.1 200 OK";
 const HTTP_RESPONSE_LINK_BAD_REQUEST: &str = "HTTP/1.1 400 BAD REQUEST";
