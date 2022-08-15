@@ -9,7 +9,7 @@ const HTTP_RESPONSE_LINK_OK: &str = "HTTP/1.1 200 OK";
 const HTTP_RESPONSE_LINK_BAD_REQUEST: &str = "HTTP/1.1 400 BAD REQUEST";
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:7878").unwrap();
     let thread_pool = ThreadPool::new(8);
 
     for stream in listener.incoming() {
