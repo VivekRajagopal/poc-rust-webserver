@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "poc-rust-webserver"
+name = "main"
 version = "0.1.0"
